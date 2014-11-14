@@ -1,0 +1,16 @@
+<!DOCTYPE locale SYSTEM "../../../../../locale/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id: locale.xml,v 1.2 2006/06/12 18:17:49 mj Exp $
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+<message key="plugins.generic.customTemplate">Custom Template</message>
+<message key="plugins.generic.customTemplate.description"><![CDATA[Allows a journal to use a completely "customized" subset of Smarty templates.]]></message>
+</locale>
