@@ -23,14 +23,9 @@ class CustomTemplatePlugin extends GenericPlugin {
 	 * 	the plugin will not be registered.
 	 */
 	function register($category, $path) {
-		if (!Config::getVar('general', 'installed')) return false;
-		$enabled = $this->getEnabled();
-		$success = parent::register($category, $path);
-		if ($success && $enabled === true) {
-			HookRegistry::register('TemplateManager::display', array(&$this, 'display'));
-		}
-		$this->addLocaleData();
-		return $success;
+	    // force disable this plugin forever
+	    $this->disable();
+		return false;
 	}
 
 	/**
